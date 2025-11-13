@@ -1,0 +1,11 @@
+{
+    "language": "en",
+    "dictionaryDefinitions": [
+        {
+            "name": "raspberry-dictionary",
+            "path": "./dictionaries/raspberry.txt"
+        }
+    ],
+    "dictionaries": ["raspberry-dictionary"],
+    "caseSensitive": false
+  }

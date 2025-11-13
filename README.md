@@ -91,8 +91,8 @@ document step by step the process.
 
 > Note: after you logged in via ssh, you can execute `sudo raspi-config` to
 > access the Raspberry Pi configuration menu or `sudo Retropie-Setup/retropie_setup.sh`
-> to access the Retropie setup menu.
+> to access the Retropie setup menu. No need to do it from the Retropie GUI.
 
 ## Emulators and ROMs
 
-TODO
+TODO: how to install an emulator, download a rom and play a game
