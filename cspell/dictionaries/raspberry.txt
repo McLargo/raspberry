@@ -1,4 +1,10 @@
 balena
+capcom
+dreamcast
 imager
+kodi
+kore
+mame
+megadrive
 raspi
 retropie
