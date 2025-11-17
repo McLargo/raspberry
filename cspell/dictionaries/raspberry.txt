@@ -7,4 +7,6 @@ kore
 mame
 megadrive
 raspi
+realvnc
+remmina
 retropie

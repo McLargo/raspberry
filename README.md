@@ -93,6 +93,28 @@ worked. The steps I executed were:
 > configuration menu or `sudo Retropie-Setup/retropie_setup.sh` to access the
 > Retropie setup menu. No need to do it from the Retropie GUI.
 
+## Connect to your Raspberry Pi
+
+There are multiple ways to connect to your Raspberry Pi remotely. The most common
+are:
+
+- SSH: to access the command line remotely. You can use any ssh client, like
+  `ssh` command from linux. Just need to know the IP address of your Raspberry
+  Pi in your network. Example: `ssh <user>@<IP_ADDRESS>`. Default user in
+  Retropie is `pi`. If you configure your hostname, you can use it instead of IP
+  address. Example: `ssh <user>@<hostname>.local`. Password is the one you set
+  during configuration.
+- VNC: to access the desktop GUI remotely. You need to enable VNC server in
+  `raspi-config` first. I got an error, so I fixed by updating package indexes
+  `sudo apt-get update` and installing manually `realvnc-vnc-server`. Still, you
+  need to enable in `raspi-config` (or by using `systemctl` commands available
+  during installation output). Important to reboot your Raspberry Pi to make the
+  changes effective. Then, you can use any VNC client, like `Remmina` or
+  `VCN viewer` to connect to your Raspberry Pi desktop remotely. Same way as
+  ssh, you can use IP address or hostname and a user/password to connect. I had
+  some issues connecting to remote desktop. As it is not a use case I need,
+  leaving it for later.
+
 ## That is the beginning of a journey
 
 Now that I have Retropie installed and configured, I can start installing
