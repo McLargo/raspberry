@@ -1,12 +1,20 @@
+# mainly software or cmd commands
+anongid
+anonuid
 balena
+blkid
 capcom
 dreamcast
+exportfs
+fdisk
 imager
 kodi
 kore
 mame
 megadrive
+nofail
 raspi
 realvnc
 remmina
 retropie
+wsize

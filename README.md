@@ -121,5 +121,7 @@ Now that I have Retropie installed and configured, I can start installing
 additional software to achieve my goals. I don't want to have a long README, so
 see a table of contents and link to the documentation related to each topic:
 
+- [NAS](docs/nas.md)
 - [Emulators and ROMs](docs/emulators.md)
+- [Torrent Client](docs/torrent.md)
 - [Kodi Media Center](docs/kodi.md)
