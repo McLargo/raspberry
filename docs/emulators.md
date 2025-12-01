@@ -50,12 +50,12 @@ Once you have the ROM files, you need to transfer them to your Retropie system.
 I used scp command to transfer files from my computer to Retropie:
 
 ```bash
-scp /path/to/your/rom/file.zip pi@retropie:/home/pi/RetroPie/roms/console_name/
+scp /path/to/your/rom/file pi@retropie:/home/pi/RetroPie/roms/console_name/
 ```
 
-Replace `/path/to/your/rom/file.zip` with the actual path to your ROM file on
-your computer. Replace `pi@retropie` with your Retropie username and hostname
-and `console_name` with the name of the console folder where the ROM should be
+Replace `/path/to/your/rom/file` with the actual path to your ROM file on your
+computer. Replace `pi@retropie` with your Retropie username and hostname and
+`console_name` with the name of the console folder where the ROM should be
 placed (this info can be picked in the emulator link).
 
 Once the ROM files are transferred, restart EmulationStation to refresh the game
@@ -68,6 +68,7 @@ Only emulators with ROMs will appear in EmulationStation.
 |:-----------:|:--------------:|:--------:|
 | [Mario Kart 64](https://www.retrostic.com/roms/n64/mario-kart-64-v1-1-e-83296) | Nintendo 64 | :thumbsup: |
 | [Pokemon Red Fire](https://www.retrostic.com/roms/gba/pokemon-fire-red-version-v1-1-82327) | GBA | :thumbsup: |
+| [Pokemon Esmeralda](https://www.pokeyplay.com/descargar_archivo.php?archivo=roms_gba/Pokemon_Esmeralda_Espanol.zip) | GBA | :thumbsup: |
 | [Golden Axe II](https://www.retrostic.com/roms/megadrive/golden-axe-ii-9062) | Mega Drive | :thumbsup: |
 | [Ghouls `N Ghosts](https://www.retrostic.com/roms/mame/ghouls-n-ghosts-40858) | MAME | :thumbsup: |
 | [Marvel vs Capcom](https://www.retrostic.com/roms/mame/marvel-vs-capcom-clash-of-super-heroes-40814) | MAME | :thumbsup: |
