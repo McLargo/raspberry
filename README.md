@@ -115,6 +115,53 @@ are:
   some issues connecting to remote desktop. As it is not a use case I need,
   leaving it for later.
 
+### Speeding up SSH connectivity
+
+This step is optional, but after playing a bit with Retropie, I got tired of
+always typing the password when connecting via ssh. So, I generated a new ssh
+key pair in my host computer (to not compromise current keys). I provided a
+passphrase for additional security. But you can leave it empty if you want.
+
+```bash
+ssh-keygen -f ~/.ssh/id_rsa_retropie
+```
+
+Then, I copied the public key to Retropie using `ssh-copy-id` command. By
+copying the key, I now can connect to Retropie without typing the ssh password.
+If you enter a passphrase, it will be stored in a ssh-agent session, so it lasts
+until session is closed.
+
+```bash
+ssh-copy-id -i id_rsa_retropie pi@retropie.local
+```
+
+If you want to add the key to ssh-agent automatically on each session start, you
+can execute:
+
+```bash
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa_retropie
+```
+
+That was to avoid typing any kind of password when connecting via ssh. To
+simplify even more the connection, I added Retropie host to my `~/.ssh/config`
+file to avoid typing user and hostname every time:
+
+```bash
+Host retropie
+    HostName retropie.local
+    User pi
+```
+
+With that configuration, just by doing `ssh retropie` I can connect to my
+Raspberry Pi without typing user or hostname. Last, I added some aliases to my
+bash profile to simplify even more.
+
+```bash
+alias pi='ssh retropie'
+alias pi_restart='ssh retropie sudo reboot'
+```
+
 ## That is the beginning of a journey
 
 Now that I have Retropie installed and configured, I can start installing
@@ -124,4 +171,10 @@ see a table of contents and link to the documentation related to each topic:
 - [NAS](docs/nas.md)
 - [Emulators and ROMs](docs/emulators.md)
 - [Torrent Client](docs/torrent.md)
-- [Kodi Media Center](docs/kodi.md)
+
+## Next steps
+
+- Install [Kodi as Media Center](docs/kodi.md). Sync downloaded file to KODI.
+  Media may requires specific folder structure (Movies, TV Shows, Music, ...)
+  and srt file for subtitles.
+- Notify torrent completion via telegram.
