@@ -111,9 +111,10 @@ are:
   during installation output). Important to reboot your Raspberry Pi to make the
   changes effective. Then, you can use any VNC client, like `Remmina` or
   `VCN viewer` to connect to your Raspberry Pi desktop remotely. Same way as
-  ssh, you can use IP address or hostname and a user/password to connect. I had
-  some issues connecting to remote desktop. As it is not a use case I need,
-  leaving it for later.
+  ssh, you can use IP address or hostname and a user/password to connect.
+
+> Note: retropie OS does not support VNC. It already comes with EmulationStation
+> as GUI, and makes no sense to use VNC to access to it.
 
 ### Speeding up SSH connectivity
 
