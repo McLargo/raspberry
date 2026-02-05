@@ -172,6 +172,7 @@ see a table of contents and link to the documentation related to each topic:
 - [NAS](docs/nas.md)
 - [Emulators and ROMs](docs/emulators.md)
 - [Torrent Client](docs/torrent.md)
+- [Building daemons](docs/daemons.md)
 
 ## Next steps
 
