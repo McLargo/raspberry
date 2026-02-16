@@ -23,5 +23,6 @@ remmina
 retropie
 snes
 supervisorctl
+SXXEYY
 thumbsup
 wsize
