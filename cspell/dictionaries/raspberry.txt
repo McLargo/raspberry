@@ -6,6 +6,7 @@ balena
 blkid
 capcom
 dreamcast
+Elementum
 exportfs
 fdisk
 flycast

@@ -138,6 +138,41 @@ In a nutshell,
 - configure media sources
 - make sure the provider can be use in your media source
 
+### Elementum Add-on
+
+Elementum is a torrent client add-on for Kodi. It allows you to stream movies
+and TV shows directly from torrent files, just search for the content, select
+the torrent file and start streaming.
+
+To install it, I've downloaded the latest version of the plugin as zip file from
+[Elementum GitHub](https://elementumorg.github.io/) and install add-on from zip.
+Kodi will do the rest. It may take a while, I even got an error and required to
+restart Kodi, but after that, plugin was available.
+
+> Remember to enable settings `Enable Remote Control` and
+> `Enabling Unknown sources on Kodi` before hand.
+
+After installation, just go to `Add-ons -> Video add-ons -> Elementum` and start
+using it. Not much is required, but I recommend to configure a couple of things:
+
+- Enable web UI access, so it can be used from your laptop or phone.
+- Set a custom folder to download the content, preferably different from Kodi
+  media sources.
+
+At first sight, I can see couple of issues. For TV Shows, I need to search
+episode by episode, which makes it hard to manage. Also, I was expecting that
+downloaded items will appear automatically in the Kodi library, independently of
+the location. But only media sources configured as Movies or TV Shows will be
+updated automatically, so I need to manually move it to the corresponding
+Kodi media source.
+
+So I won't consider using Elementum add-on on daily basis, but it could be handy
+for a quick win if I don't have a movie or cannot find a entire season easily.
+Just search and play. In case you want to permanently have an item in Kodi
+library, I recommend to use the interface, download an item and move it into my
+Kodi media source.
+
 ## References
 
 - [Kodi Wiki](https://kodi.wiki/view/Main_Page)
+- [Elementum Add-on](https://howtomediacenter.com/en/install-elementum-kodi/#downloading-elementum)
