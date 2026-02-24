@@ -95,6 +95,26 @@ If everything is correct, you can access the transmission UI at
 configuration file. You can now add torrent files or magnet links to start
 downloading, and monitor the download progress.
 
+## Extra configuration
+
+Something I find useful is to execute a script when a torrent is completed. Some
+use cases are to move the file to another location, send a notification, remove
+torrent, etc. To do that, we need to set the `script-torrent-done-enabled`
+parameter to `true` and set the `script-torrent-done-filename` parameter to the
+path of the script to execute.
+
+```json
+    ...
+    "script-torrent-done-enabled": true,
+    "script-torrent-done-filename": "/path/to/your/script.sh",
+    ...
+```
+
+[Script must be a executable file](../scripts/on-torrent-complete.sh).
+Transmission passes environment variables (like TR_TORRENT_NAME, TR_TORRENT_DIR)
+to the script, which are accessible and can be used to perform actions based on
+the torrent that was completed.
+
 ## Troubleshooting
 
 - In case of 403 error when accessing web interface, probably
