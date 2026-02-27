@@ -61,12 +61,13 @@ Inside configuration file, we need to set the following parameters:
     ...
     "rpc-password": "your_password",  # will be hashed on start
     "rpc-username": "your_username",
-    "rpc-whitelist": "192.168.1.*",
+    "rpc-whitelist": "127.0.0.1,localhost,192.168.1.*",
     ...
 ```
 
 Make sure to set `rpc-whitelist` to your network range, so you can access web
-interface from your computer.
+interface from your computer. Set also local IP addresses to be able to access
+it from the Raspberry.
 
 Transmission daemon uses `debian-transmission` user and we need to update it in
 the daemon configuration to `pi` to avoid any privilege issues. Also, change the
@@ -110,10 +111,10 @@ path of the script to execute.
     ...
 ```
 
-[Script must be a executable file](../scripts/on-torrent-complete.sh).
-Transmission passes environment variables (like TR_TORRENT_NAME, TR_TORRENT_DIR)
-to the script, which are accessible and can be used to perform actions based on
-the torrent that was completed.
+[Script must be a executable file](../scripts/on-torrent-complete.sh). Also, in
+my case I store the script in `/var Transmission passes environment variables
+(like TR_TORRENT_NAME, TR_TORRENT_DIR) to the script, which are accessible and
+can be used to perform actions based on the torrent that was completed.
 
 ## Troubleshooting
 
